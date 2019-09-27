@@ -1,0 +1,638 @@
+/*
+1rem ------> 16px
+X    <------ 0.9375rem
+
+Para calcular el valor de PX a REM
+*/
+
+/*
+IMPORTANTE
+Todo lo que esta fuera de las reglas de medio, son los estilos
+que afectan a dispositivos XS o extra pequeños
+XS <= 768 o sea a partir de 767 hasta 0px de ancho
+
+*/
+
+html{
+	font-size:12px;
+}
+
+.container{
+	width: 100vw;
+	max-width: 1120px;
+	padding: 0 0.9375rem;
+	margin: 0 auto;
+	background: #EFEFEF;
+	border: 1px solid #707070;
+}
+
+.row{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	clear: both;
+	border: 1px solid #707070;
+	margin-top: 0.9375rem;
+	margin-bottom: 0.9375rem;
+}
+
+/*
+La clase col-xs muestra a Dispositivos extra pequeños que estan en el siguiente rango
+De 0 pixel de ancho hasta menor o igual a 768.
+*/
+
+.col-xs-1{
+	width: 8.3333333333%;
+	float: left;
+	height: 76px;
+	padding: 0.9375rem;
+	background: #B6B1F0;
+	border: 1px solid #707070;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.col-xs-2{
+	width: calc(8.3333333333% * 2);
+	float: left;
+	height: 76px;
+	padding: 0.9375rem;
+	background: #B6B1F0;
+	border: 1px solid #707070;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.col-xs-3{
+	width: calc(8.3333333333% * 3);
+	float: left;
+	height: 76px;
+	padding: 0.9375rem;
+	background: #B6B1F0;
+	border: 1px solid #707070;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.col-xs-4{
+	width: calc(8.3333333333% * 4);
+	float: left;
+	height: 76px;
+	padding: 0.9375rem;
+	background: #B6B1F0;
+	border: 1px solid #707070;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.col-xs-5{
+	width: calc(8.3333333333% * 5);
+	float: left;
+	height: 76px;
+	padding: 0.9375rem;
+	background: #B6B1F0;
+	border: 1px solid #707070;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.col-xs-6{
+	width: calc(8.3333333333% * 6);
+	float: left;
+	height: 76px;
+	padding: 0.9375rem;
+	background: #B6B1F0;
+	border: 1px solid #707070;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.col-xs-7{
+	width: calc(8.3333333333% * 7);
+	float: left;
+	height: 76px;
+	padding: 0.9375rem;
+	background: #B6B1F0;
+	border: 1px solid #707070;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.col-xs-8{
+	width: calc(8.3333333333% * 8);
+	float: left;
+	height: 76px;
+	padding: 0.9375rem;
+	background: #B6B1F0;
+	border: 1px solid #707070;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.col-xs-9{
+	width: calc(8.3333333333% * 9);
+	float: left;
+	height: 76px;
+	padding: 0.9375rem;
+	background: #B6B1F0;
+	border: 1px solid #707070;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.col-xs-10{
+	width: calc(8.3333333333% * 10);
+	float: left;
+	height: 76px;
+	padding: 0.9375rem;
+	background: #B6B1F0;
+	border: 1px solid #707070;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.col-xs-11{
+	width: calc(8.3333333333% * 11);
+	float: left;
+	height: 76px;
+	padding: 0.9375rem;
+	background: #B6B1F0;
+	border: 1px solid #707070;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.col-xs-12{
+	width: calc(8.3333333333% * 12);
+	float: left;
+	height: 76px;
+	padding: 0.9375rem;
+	background: #B6B1F0;
+	border: 1px solid #707070;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+
+@media only screen and (min-width:768px){
+	.container{
+		max-width:720px;
+	}
+	.container-fluid{
+		max-width:100vw;
+	}
+}
+
+@media only screen and (min-width:992px){
+	.container{
+		max-width:960px;
+	}
+
+	.container-fluid{
+		max-width:100vw;
+	}
+}
+
+@media only screen and (min-width:1200px){
+	.container{
+		max-width:1140px;
+	}
+
+	.container-fluid{
+		max-width:100vw;
+	}
+
+}
+
+/*
+La clase col-sm muestra a Dispositivos small o pequeños que estan en el siguiente rango
+Mayor o igual a 768 y llegan hasta 992px de ancho.
+768 >= , van hasta 992px de ancho.
+*/
+@media only screen and (min-width:768px){
+	
+	html{
+	  font-size:12px;
+	}
+
+	.col-sm-1{
+		width: 8.3333333333%;
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-sm-2{
+		width: calc(8.3333333333% * 2);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-sm-3{
+		width: calc(8.3333333333% * 3);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-sm-4{
+		width: calc(8.3333333333% * 4);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-sm-5{
+		width: calc(8.3333333333% * 5);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-sm-6{
+		width: calc(8.3333333333% * 6);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-sm-7{
+		width: calc(8.3333333333% * 7);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-sm-8{
+		width: calc(8.3333333333% * 8);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-sm-9{
+		width: calc(8.3333333333% * 9);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-sm-10{
+		width: calc(8.3333333333% * 10);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-sm-11{
+		width: calc(8.3333333333% * 11);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-sm-12{
+		width: calc(8.3333333333% * 12);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+}
+
+/*
+La clase col-md muestra a Dispositivos medianos que estan en el siguiente rango
+Mayor o igual a 992 y llegan hasta 1200px de ancho.
+992 >= , van hasta 1200px de ancho.
+*/
+@media only screen and (min-width:992px){
+
+	html{
+		font-size:14px;
+	}
+
+	.col-md-1{
+		width: 8.3333333333%;
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-md-2{
+		width: calc(8.3333333333% * 2);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-md-3{
+		width: calc(8.3333333333% * 3);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-md-4{
+		width: calc(8.3333333333% * 4);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-md-5{
+		width: calc(8.3333333333% * 5);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-md-6{
+		width: calc(8.3333333333% * 6);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-md-7{
+		width: calc(8.3333333333% * 7);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-md-8{
+		width: calc(8.3333333333% * 8);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-md-9{
+		width: calc(8.3333333333% * 9);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-md-10{
+		width: calc(8.3333333333% * 10);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-md-11{
+		width: calc(8.3333333333% * 11);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-md-12{
+		width: calc(8.3333333333% * 12);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+}
+
+
+/*
+La clase col-lg muestra a Dispositivos Large o grandes que estan en el siguiente rango
+Mayor o igual a 1200 y llegan hasta el infinito y más haya.
+1200 >= , van hasta el OO.
+*/
+@media only screen and (min-width:1200px){
+	
+	html{
+		font-size:16px;
+	}
+
+	.col-lg-1{
+		width: 8.3333333333%;
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-lg-2{
+		width: calc(8.3333333333% * 2);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-lg-3{
+		width: calc(8.3333333333% * 3);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-lg-4{
+		width: calc(8.3333333333% * 4);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-lg-5{
+		width: calc(8.3333333333% * 5);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-lg-6{
+		width: calc(8.3333333333% * 6);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-lg-7{
+		width: calc(8.3333333333% * 7);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-lg-8{
+		width: calc(8.3333333333% * 8);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-lg-9{
+		width: calc(8.3333333333% * 9);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-lg-10{
+		width: calc(8.3333333333% * 10);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-lg-11{
+		width: calc(8.3333333333% * 11);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.col-lg-12{
+		width: calc(8.3333333333% * 12);
+		float: left;
+		height: 76px;
+		padding: 0.9375rem;
+		background: #B6B1F0;
+		border: 1px solid #707070;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+}
